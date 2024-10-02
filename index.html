@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airport Passengers Movement Projection</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
     <h1>Airport Passengers Movement Projection</h1>
-    <iframe title="Predicted dashboard final" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=4c7910b5-26c0-42d0-8aa4-b62bbde36b89&autoAuth=true&ctid=d1e81dd5-dac1-4171-8066-54aa681f1a13" frameborder="0" allowFullScreen="true"></iframe>
+    <div class="iframe-container">
+        <iframe title="Predicted dashboard final" src="https://app.powerbi.com/reportEmbed?reportId=4c7910b5-26c0-42d0-8aa4-b62bbde36b89&autoAuth=true&ctid=d1e81dd5-dac1-4171-8066-54aa681f1a13" allowFullScreen="true"></iframe>
+    </div>
 </body>
 </html>
